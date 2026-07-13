@@ -21,7 +21,26 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # ROM Flags
 TARGET_DISABLE_EPPE := true
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := true
+TARGET_INCLUDES_LOS_PREBUILTS := false
 WITH_GMS := true
+# Camera information
+AXION_CAMERA_REAR_INFO := 64,8,2
+AXION_CAMERA_FRONT_INFO := 16
+
+# Maintainer name (underscores become spaces)
+AXION_MAINTAINER := Jefino9488
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Dimensity_8100
+# CPU governor support
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+
+# GPU paths (MediaTek Dimensity 8100)
+GPU_FREQS_PATH := /sys/class/devfreq/13000000.mali/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/class/devfreq/13000000.mali/min_freq
 
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := xaga
