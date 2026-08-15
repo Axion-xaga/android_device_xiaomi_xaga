@@ -14,6 +14,8 @@ $(call inherit-product, device/xiaomi/xaga/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+$(call soong_config_set,fastbootd,bypass_lock_state,true)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2460
 TARGET_SCREEN_WIDTH := 1080
