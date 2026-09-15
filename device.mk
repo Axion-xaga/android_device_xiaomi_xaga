@@ -55,6 +55,9 @@ PRODUCT_PACKAGES += \
     WifiOverlayXagaIn \
     WifiOverlayXagaPro
 
+# Fastbootd
+$(call soong_config_set_bool,fastbootd,bypass_lock_state,true)
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.project.rc \
