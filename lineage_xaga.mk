@@ -14,6 +14,15 @@ $(call inherit-product, device/xiaomi/xaga/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Axion Stuff
+AXION_CAMERA_REAR_INFO := 64,8,2
+AXION_CAMERA_FRONT_INFO := 16
+AXION_PROCESSOR := MTK_Dimensity_8100
+AXION_MAINTAINER := Jefino9488
+TARGET_INCLUDES_LOS_PREBUILTS := false
+TARGET_INCLUDE_AXFX := true
+TARGET_ENABLE_BLUR := true
+
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := xaga
 PRODUCT_MANUFACTURER := Xiaomi
